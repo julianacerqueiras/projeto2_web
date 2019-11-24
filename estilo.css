@@ -2,8 +2,7 @@ body {
 	background:  #dfe6e9;
 	font-family: 'Lato', sans-serif;
 	/*Medida Utilizada para designer responsivo */
-	font-size: 1vw; 
-	border-top:  8px solid #273c75;	
+	border-top:  8px solid  #ffc331;	
 	color: #333;
 }
 .container {
@@ -25,27 +24,15 @@ body {
 }
 	.logo {
 		display: block;
-		width: 200px;
+		max-width: 500px;
 		margin: 20px auto;
 		margin-top: 28px;
 	}	
-
-	.titulo-site {
-		width: 100%;
-		text-align: center;
-		font-size: 5vw;
-		text-transform: uppercase;
-		padding: 10px;
-	}
-		@media (min-width: 768px) {
-			.titulo-site {
-				font-size: 3vw;
-			}
-		}
+	
 
 nav{
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+
+	border-radius: 5px 5px 5px 5px;
 	font-size: 250%
 	position: relative;
 	display: inline-block;
@@ -56,35 +43,50 @@ nav{
 	display: flex;
 	justify-content: center;
 	margin-top: 20px;
-	background: #D8CF41;
+	background: #ffc331;
 }
-
 	.navbar-nav{
-
 	}
-
+		
 		.nav-item a {
+
 				display: block;
 				padding:  10px 15px;
 				text-decoration: none;
-				color: #000;
-				background: #D8CF41;	
+				background: #ffc331;	
 
 			}
-
 				.nav-item:last-child a {
-					border-radius: 0 5px 5px 0;
+					border-radius: 5px 5px 5px 5px;
 
 				}
 
 				.nav-item a:hover {
 					background:  #dfe6e9;
+					border-radius: 5px 5px 5px 5px;
 				}
 
+				.nav-item a:title{
+					font-size: 25px;
+				}
+ 
+	 
+ .card-header{
+	min-height: 100px;
+}
+
+.card-body{
+	max-height: 150px;
+}
+
+.card-img-top{
+	max-height: 200px;
+}
+ 
 /* Menu responsivo */
 @media (max-width: 480px) {
 	.nav-item:first-child a {
-		border-radius: 0 ;
+		border-radius: 0 !important;
 
 	}
 }
@@ -96,13 +98,14 @@ nav{
 		width: 300px;
 		margin-left: -150px;
 
-	}
-
-	.nav-item:first-child a {
-		border-radius: 5px 0 0 5px;
-	}
 }
-/*Será aplicado nos dispositivos com telas maiores de 768 */
+	.nav-item:first-child a {
+		border-radius: 5px 5px 5px 5px;
+	}
+	
+}
+
+/*erá aplicado nos dispositivos com telas maiores de 768 */
 @media (max-width: 768px) {
 	.navbar-nav {
 
@@ -116,22 +119,35 @@ nav{
 			.nav-item {
 				width: 100%;
 				float: none;
-				border-top:  1px solid #121211;
+				border-top:  1px solid #121211; /* linha entre as opções do menu responsivo*/
+				font-size: 15px; /* tamanho da fonte do menu responsivo*/
+				
+			
 			}
 				.nav-item:first-child a {
-					border-radius: 5px 5px 0 0;
+					border-radius: 5px 5px 5px 5px;
 				}
 
 				.nav-item:last-child a {
-					border-radius: 0 0 5px 5px;
+					border-radius: 5px 5px 5px 5px;
 				}
 
 	/* Deixa o menu mobile visivel só para celulares e tablets */
 	.nav-mobile {
 		display: block;
 	}
-
-
+	.card-header{
+		min-height: 100px;
+	}
+	
+	.card-body{
+		max-height: 150px;
+	}
+	
+	.card-img-top{
+		max-height: 150px;
+	}
+}
 footer{
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
@@ -141,6 +157,7 @@ footer{
 section{
 	padding-top: 60px;
 }
+
 
 
 
